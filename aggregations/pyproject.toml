@@ -1,0 +1,22 @@
+[project]
+name = "aggregations"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "mustafaaykon",email = "mustafa.aykon@icloud.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pyspark (>=3.5.5,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "aggregations", from = "src"}]
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
